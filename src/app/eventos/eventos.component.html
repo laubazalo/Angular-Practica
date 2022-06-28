@@ -11,7 +11,7 @@
       <tr *ngFor="let evento of eventos">
         <td>{{ evento.nombre }}</td>
         <td>{{ evento.lugar }}</td>
-        <td>{{ evento.fecha }}</td>
+        <td>{{ evento.fecha | date }}</td>
       </tr>
     </tbody>
   </table>
