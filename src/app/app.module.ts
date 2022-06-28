@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { Evento } from './modelos/evento';
+import { EventosComponentComponent } from './eventos/eventos.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule],
+  providers: [Evento],
+  declarations: [AppComponent, EventosComponentComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
